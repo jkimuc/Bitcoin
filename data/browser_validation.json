@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "browser": "154.0.8037.57",
+  "protocol": "local HTTP, then browser offline",
+  "file_url_limit": "Managed browser policy blocks file:// navigation; file opening could not be directly tested here",
+  "external_requests": 0,
+  "checks": [
+    "3 charts rendered",
+    "fit period changes numerical output",
+    "HAC/IID selector",
+    "USD logarithmic axis",
+    "forecast overlay",
+    "Plotly zoom",
+    "9 embedded downloads match exported files",
+    "current independent calculation audit",
+    "9 source checks and 7-component checklist",
+    "immutable source link",
+    "390px mobile layout, including expanded audit details",
+    "no JavaScript errors"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "checked_outputs_sha256": "677b2b27201abd87f433e02326e993a3d50dbcb6707a089c47d4b96c5cb8d77b",
+  "status": "passed",
+  "as_of": "2026-10-27",
+  "independent_library": "statsmodels 0.14.6",
+  "tolerances": {
+    "coefficients_rtol": 1e-11,
+    "coefficients_atol": 1e-11,
+    "covariance_rtol": 1e-10,
+    "covariance_atol": 1e-12,
+    "target_log_rtol": 1e-11,
+    "target_log_atol": 1e-11,
+    "target_usd_rtol": 1e-10,
+    "daily_export_rtol": 1e-09,
+    "daily_export_log_atol": 1e-10
+  },
+  "input_sha256": "06495ff8e643432e6948b7b4686ce44fc106217287dabdc1b38351d9ddec46c3",
+  "target_date": "2030-11-01",
+  "checks": [
+    "All three OLS fits, residual variance and R\u00b2",
+    "Classical OLS covariance and Student-t mean confidence intervals",
+    "Newey\u2013West HAC covariance: 90 lags, Bartlett weights, finite-sample correction",
+    "HAC asymptotic normal mean confidence intervals",
+    "Student-t IID single-observation prediction intervals",
+    "Natural-log to USD conversion with math.exp for every target endpoint",
+    "All exported daily full-history model values and intervals",
+    "All scenario chart means and every confidence/prediction endpoint",
+    "Chronological holdout predictions, error and coverage"
+  ],
+  "scenarios": [
+    {
+      "scenario": "Full history",
+      "n": 5789,
+      "alpha": 1.7341007178898267,
+      "beta_per_year": 0.7210710558323071,
+      "sigma_squared": 1.647368984466083,
+      "r_squared": 0.8685832425939106,
+      "target_time_years": 20.290212183436,
+      "target_log": {
+        "mu": 16.364785440061567,
+        "iid_low": 16.26947812779583,
+        "iid_high": 16.460092752327306,
+        "hac_low": 15.423750570207732,
+        "hac_high": 17.305820309915404,
+        "prediction_low": 13.846843506822177,
+        "prediction_high": 18.88272737330096
+      },
+      "target_usd": {
+        "mu": 12797820.488576526,
+        "iid_low": 11634415.624430194,
+        "iid_high": 14077562.169423578,
+        "hac_low": 4994014.085026928,
+        "hac_high": 32796104.790510666,
+        "prediction_low": 1031828.9929859636,
+        "prediction_high": 158731931.7165741
+      },
+      "target_se_iid": 0.04861690283045228,
+      "target_se_hac": 0.48012865403476745,
+      "student_t_critical": 1.9603739999258336,
+      "normal_critical": 1.959963984540054,
+      "max_abs_beta_difference": 5.551115123125783e-15,
+      "max_abs_hac_cov_difference": 8.604228440844963e-16,
+      "illustrative_iid_lognormal_mean_usd": 29164708.763401996
+    },
+    {
+      "scenario": "Since 2015",
+      "n": 4161,
+      "alpha": 3.837750572480572,
+      "beta_per_year": 0.529427482709229,
+      "sigma_squared": 0.4564293808183195,
+      "r_squared": 0.8691921211871537,
+      "target_time_years": 20.290212183436,
+      "target_log": {
+        "mu": 14.579946532393222,
+        "iid_low": 14.513398711656695,
+        "iid_high": 14.64649435312975,
+        "hac_low": 14.036041696807164,
+        "hac_high": 15.123851367979281,
+        "prediction_low": 13.253747355374935,
+        "prediction_high": 15.90614570941151
+      },
+      "target_usd": {
+        "mu": 2147782.628635863,
+        "iid_low": 2009504.458654011,
+        "iid_high": 2295576.006315406,
+        "hac_low": 1246738.7461357398,
+        "hac_high": 3700029.564467979,
+        "prediction_low": 570202.7939379371,
+        "prediction_high": 8090051.941015336
+      },
+      "target_se_iid": 0.033943712440783896,
+      "target_se_hac": 0.2775075664023985,
+      "student_t_critical": 1.9605345423728167,
+      "normal_critical": 1.959963984540054,
+      "max_abs_beta_difference": 1.3322676295501878e-14,
+      "max_abs_hac_cov_difference": 1.0547118733938987e-15,
+      "illustrative_iid_lognormal_mean_usd": 2698377.4956343006
+    },
+    {
+      "scenario": "Since 2020",
+      "n": 2335,
+      "alpha": 6.389582504686081,
+      "beta_per_year": 0.32881446227292394,
+      "sigma_squared": 0.2151427879735613,
+      "r_squared": 0.6314053181000243,
+      "target_time_years": 20.290212183436,
+      "target_log": {
+        "mu": 13.06129771318612,
+        "iid_low": 12.981144672994189,
+        "iid_high": 13.14145075337805,
+        "hac_low": 12.458382799966966,
+        "hac_high": 13.664212626405273,
+        "prediction_low": 12.14820140348862,
+        "prediction_high": 13.974394022883619
+      },
+      "target_usd": {
+        "mu": 470380.73169088416,
+        "iid_low": 434149.6950120755,
+        "iid_high": 509635.3522484853,
+        "hac_low": 257399.0285286226,
+        "hac_high": 859591.5610514738,
+        "prediction_low": 188754.29154001156,
+        "prediction_high": 1172201.3361436606
+      },
+      "target_se_iid": 0.0408739434234662,
+      "target_se_hac": 0.307615302104972,
+      "student_t_critical": 1.9609813362396227,
+      "normal_critical": 1.959963984540054,
+      "max_abs_beta_difference": 3.8191672047105385e-14,
+      "max_abs_hac_cov_difference": 1.199040866595169e-14,
+      "illustrative_iid_lognormal_mean_usd": 523802.0407901399
+    }
+  ],
+  "export_daily_rows": 7441,
+  "holdout": {
+    "n": 1969,
+    "last_prediction_usd": 10220750.949583193,
+    "last_actual_usd": 76619.8666090415,
+    "median_absolute_percentage_error": 2029.6963434171985,
+    "iid_prediction_interval_coverage": 26.91721686135094,
+    "log_rmse": 2.9822381045243804
+  },
+  "interpretation": "Arithmetic is correct. exp(E[ln P|t]) is a geometric-mean trend, and a median only under the stated log-error assumption. It is not E[P|t]. Correct arithmetic does not validate exponential growth or calibrate future-price probabilities."
+}

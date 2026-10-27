@@ -1,0 +1,56 @@
+{
+  "as_of": "2026-10-27",
+  "all_seven_components_present": true,
+  "october_coverage_verified": false,
+  "requirements": [
+    {
+      "requirement": 1,
+      "name": "Historical daily Bitcoin prices",
+      "html_location": "Bitcoin in dollars; Sources & audit trail",
+      "status": "implemented with disclosed coverage limit",
+      "evidence": "5,789 consecutive daily Coin Metrics PriceUSD observations, 2010-07-18 to 2026-05-23. October extension unverified because proxy denied newer-source requests."
+    },
+    {
+      "requirement": 2,
+      "name": "Interactive actual-price dollar graph",
+      "html_location": "Bitcoin in dollars",
+      "status": "implemented and browser-tested",
+      "evidence": "Hover, zoom, date ranges, linear/log dollar axis; actuals shown by default."
+    },
+    {
+      "requirement": 3,
+      "name": "Natural logarithm graph",
+      "html_location": "The natural logarithm of price",
+      "status": "implemented and browser-tested",
+      "evidence": "Daily ln(PriceUSD) rather than log10."
+    },
+    {
+      "requirement": 4,
+      "name": "Log-price linear regression and 95% confidence band",
+      "html_location": "The natural logarithm of price; Independent regression and back-transformation audit",
+      "status": "implemented and independently verified",
+      "evidence": "OLS; selectable classical IID Student-t and Newey\u2013West HAC 90-lag normal mean-log intervals, with independently verified covariance and endpoints."
+    },
+    {
+      "requirement": 5,
+      "name": "November 2030 forecast converted to USD",
+      "html_location": "The estimate; Method; Independent audit",
+      "status": "implemented and independently verified",
+      "evidence": "2030-11-01 dated estimate exp(16.364785440061567) = 12,797,820.488576526 USD under full-history fit, with November 30 also reported."
+    },
+    {
+      "requirement": 6,
+      "name": "Reliability and uncertainty",
+      "html_location": "The estimate; Stress tests; Interpretation",
+      "status": "implemented",
+      "evidence": "Confidence vs prediction intervals, sample-window sensitivity, residual dependence, holdout failure and explicit lack of calibrated future-price probabilities."
+    },
+    {
+      "requirement": 7,
+      "name": "Data sources and methodology",
+      "html_location": "Method; Sources & audit trail",
+      "status": "implemented",
+      "evidence": "Coin Metrics attribution and license; immutable Git commit URL; raw CSV SHA-256; data exclusion rules; formulas; independent audit downloads; documented network limitations."
+    }
+  ]
+}

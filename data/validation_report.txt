@@ -1,0 +1,70 @@
+{
+  "provenance": {
+    "provider": "Coin Metrics Community data archive",
+    "metric": "PriceUSD",
+    "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/btc.csv",
+    "source_readme": "https://github.com/coinmetrics/data",
+    "retrieved_on": "2026-10-27",
+    "sha256": "06495ff8e643432e6948b7b4686ce44fc106217287dabdc1b38351d9ddec46c3",
+    "raw_rows": 6351,
+    "price_rows": 5789,
+    "first_date": "2010-07-18",
+    "last_date": "2026-05-23",
+    "missing_days": 0,
+    "duplicate_dates": 0,
+    "missing_price_rows_excluded": 562,
+    "upstream_commit": "f1a36afb962731c387bb03982758ab0103063da5",
+    "pinned_url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/btc.csv",
+    "license": "CC BY-NC 4.0 \u2014 attribution and noncommercial use required",
+    "limitations": "Rechecked snapshot still ends May 23, 2026, with identical source bytes. Live Coin Metrics, Coinbase, FRED, Yahoo and CryptoDataDownload requests failed at proxy CONNECT (403), consistent with missing host allowlisting, before provider responses. October data availability and independent cross-provider validation therefore remain unverified, not disproven. Git master was resolved through native Git and the commit-pinned CSV matches the original SHA-256. Early thin-market values are provider estimates, not universally executable prices."
+  },
+  "targets": {
+    "Full history": {
+      "mu": 12797820.488576662,
+      "iid_low": 11634415.624430317,
+      "iid_high": 14077562.16942373,
+      "hac_low": 4994014.085026973,
+      "hac_high": 32796104.790511016,
+      "prediction_low": 1031828.9929859746,
+      "prediction_high": 158731931.71657524
+    },
+    "Since 2015": {
+      "mu": 2147782.628635851,
+      "iid_low": 2009504.4586540002,
+      "iid_high": 2295576.0063153934,
+      "hac_low": 1246738.7461357375,
+      "hac_high": 3700029.5644679465,
+      "prediction_low": 570202.7939379341,
+      "prediction_high": 8090051.941015293
+    },
+    "Since 2020": {
+      "mu": 470380.73169091344,
+      "iid_low": 434149.6950121017,
+      "iid_high": 509635.3522485179,
+      "hac_low": 257399.02852863635,
+      "hac_high": 859591.561051535,
+      "prediction_low": 188754.2915400233,
+      "prediction_high": 1172201.3361437335
+    }
+  },
+  "diagnostics": {
+    "sigma2": 1.6473689844660824,
+    "n": 5789,
+    "r2": 0.8685832425939106,
+    "lag1": 0.9993314043416627,
+    "dw": 0.001336327966615162,
+    "rmse_log": 1.283276995350789
+  },
+  "holdout": {
+    "train_end": "2020-12-31",
+    "test_start": "2021-01-01",
+    "test_end": "2026-05-23",
+    "n": 1969,
+    "last_prediction_usd": 10220750.949583303,
+    "last_actual_usd": 76619.8666090415,
+    "median_absolute_percentage_error": 2029.696343417221,
+    "iid_prediction_interval_coverage": 26.91721686135094,
+    "log_rmse": 2.9822381045243898
+  }
+}
+PASS: coverage, positive prices, independent regression, HAC covariance, interval order, exponentiation, CSV roundtrip.

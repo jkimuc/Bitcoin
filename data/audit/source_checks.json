@@ -1,0 +1,56 @@
+{
+  "checked_as_of": "2026-10-27",
+  "executed_at_utc": "2026-10-27T14:57:21.180619+00:00",
+  "checks": [
+    {
+      "name": "coinmetrics_archive",
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/master/csv/btc.csv",
+      "status": 200,
+      "bytes": 2482497,
+      "sha256": "06495ff8e643432e6948b7b4686ce44fc106217287dabdc1b38351d9ddec46c3",
+      "http_date": "Tue, 27 Oct 2026 14:57:21 GMT",
+      "last_modified": null,
+      "content_type": "text/plain; charset=utf-8"
+    },
+    {
+      "name": "coinmetrics_live",
+      "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=PriceUSD&frequency=1d&start_time=2026-05-20&end_time=2026-10-27&page_size=1000",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "name": "coinmetrics_catalog",
+      "url": "https://community-api.coinmetrics.io/v4/catalog-all/asset-metrics?assets=btc&metrics=PriceUSD",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "name": "coinbase_candles",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=86400&start=2026-05-20T00%3A00%3A00Z&end=2026-10-27T00%3A00%3A00Z",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "name": "fred_coinbase",
+      "url": "https://fred.stlouisfed.org/graph/?id=CBBTCUSD",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "name": "fred_coinbase_csv",
+      "url": "https://fred.stlouisfed.org/graph/graph.csv?id=CBBTCUSD&cosd=2026-05-20&coed=2026-10-27",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "name": "yahoo_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?range=1y&interval=1d",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "name": "bitstamp_daily",
+      "url": "https://www.cryptodatadownload.com/cdd/Bitstamp_BTCUSD_d.csv",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "name": "github_commit",
+      "url": "https://api.github.com/repos/coinmetrics/data/commits?path=csv/btc.csv&per_page=1",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+  ]
+}

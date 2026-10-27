@@ -1,0 +1,19 @@
+{
+  "checked_as_of": "2026-10-27",
+  "configured_policy_type": "restricted",
+  "custom_allowed_domains": [],
+  "selected_presets": [
+    "package_managers"
+  ],
+  "tested_hosts_not_present_in_configured_allowlist": [
+    "community-api.coinmetrics.io",
+    "api.exchange.coinbase.com",
+    "fred.stlouisfed.org",
+    "query1.finance.yahoo.com",
+    "www.cryptodatadownload.com",
+    "api.github.com"
+  ],
+  "finding": "Requests to these hosts failed during proxy CONNECT with HTTP 403, before an origin HTTP response. This is consistent with the configured host restrictions; it is not evidence of missing or unreliable October prices, or a provider credential requirement.",
+  "minimum_followup": "Allow community-api.coinmetrics.io in environment network settings to retry the same PriceUSD series. Allow api.exchange.coinbase.com for an independent exchange-series overlap check. Public endpoints do not require inventing credentials.",
+  "daily_cutoff": "As of October 27, 2026, the latest completed UTC daily interval ends October 27 (the October 26 daily observation under a start-of-day label). Do not treat October 27 intraday quotes or October 28\u201331 as completed daily observations."
+}

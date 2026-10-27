@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "method": "local preview.py server plus Chromium",
+  "checks": [
+    "HTML served with text/html and inline disposition",
+    "three interactive charts rendered",
+    "fit-window interaction updates forecast",
+    "no JavaScript errors"
+  ],
+  "public_preview_available": false
+}

@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/coinmetrics/data.git",
+  "branch": "master",
+  "commit": "f1a36afb962731c387bb03982758ab0103063da5",
+  "pinned_url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/btc.csv",
+  "status": 200,
+  "sha256": "06495ff8e643432e6948b7b4686ce44fc106217287dabdc1b38351d9ddec46c3",
+  "matches_original": true
+}
